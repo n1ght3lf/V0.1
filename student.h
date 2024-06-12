@@ -44,8 +44,8 @@ public:
     inline std::string getLastName() const { return lastName; }
     std::string getName() const { return getFirstName() + " " + getLastName(); }
     const std::vector<int>& getHomeworkMarks() const { return homeworkMarks; } 
-    int getExamMark() const { return examMark; } // changed from getExamResults
-    int getExamGrade() const { return homeworkMarks.back(); } // changed from getExamGrade
+    int getExamMark() const { return examMark; }
+    int getExamGrade() const { return homeworkMarks.back(); }
     void removeLastHomeworkMark() { if (!homeworkMarks.empty()) { homeworkMarks.pop_back(); } }
 
     // Setters
